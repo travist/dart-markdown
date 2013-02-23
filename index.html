@@ -1,48 +1,17 @@
-<html>
-<head>
-  <title>Dart Markdown Demo</title>
-  <link href='static/styles.css' rel='stylesheet' type='text/css'>
-</head>
-<body><h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porta vestibulum 
-lorem, ac fringilla dui venenatis sit amet. Class aptent taciti sociosqu ad 
-litora torquent per conubia nostra, per inceptos himenaeos. Sed justo ligula, 
-sagittis id semper ac, viverra varius leo. Vivamus gravida mi id elit commodo 
-non luctus dui tempor. In pulvinar viverra dolor, blandit molestie augue 
-lobortis in. Suspendisse ac venenatis magna. Donec vitae turpis et ante euismod 
-porttitor at ut erat. Nunc euismod, nulla et viverra malesuada, eros metus.</p>
-<p><strong>Dart Classifier</strong></p>
-<pre><span class="k">class</span> <span class="t">Classification</span> <span class="p">{</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">NONE</span> <span class="o">=</span> <span class="s si">""</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">ERROR</span> <span class="o">=</span> <span class="s si">"e"</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">COMMENT</span> <span class="o">=</span> <span class="s si">"c"</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">IDENTIFIER</span> <span class="o">=</span> <span class="s si">"i"</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">KEYWORD</span> <span class="o">=</span> <span class="s si">"k"</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">OPERATOR</span> <span class="o">=</span> <span class="s si">"o"</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">STRING</span> <span class="o">=</span> <span class="s si">"s"</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">NUMBER</span> <span class="o">=</span> <span class="s si">"n"</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">PUNCTUATION</span> <span class="o">=</span> <span class="s si">"p"</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">TYPE_IDENTIFIER</span> <span class="o">=</span> <span class="s si">"t"</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">SPECIAL_IDENTIFIER</span> <span class="o">=</span> <span class="s si">"r"</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">ARROW_OPERATOR</span> <span class="o">=</span> <span class="s si">"a"</span><span class="p">;</span>
-  <span class="k">static</span> <span class="k">const</span> <span class="i">STRING_INTERPOLATION</span> <span class="o">=</span> <span class="s si">'si'</span><span class="p">;</span>
-<span class="p">}</span></pre>
-<p><strong>HTML Classifier</strong></p>
-<pre>&lt;<span class="t">html</span>&gt;&lt;<span class="t">body</span>&gt;<span class="">
-  </span>&lt;<span class="t">div</span>&gt;Hello counter: {{count}}&lt;/<span class="t">div</span>&gt;<span class="">
-  </span>&lt;<span class="t">script</span><span class="k"> type</span>=<span class="s">"application/dart"</span>&gt;<span class="">
-    </span><span class="k">import</span> <span class="s si">'dart:html'</span><span class="p">;</span>
-    <span class="k">import</span> <span class="s si">'package:web_ui/watcher.dart'</span> <span class="k">as</span> <span class="i">watchers</span><span class="p">;</span>
-    <span class="t">int</span> <span class="i">count</span><span class="p">;</span>
-    <span class="i">main</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
-      <span class="i">count</span> <span class="o">=</span> <span class="n">0</span><span class="p">;</span>
-      <span class="i">window</span><span class="p">.</span><span class="i">setInterval</span><span class="p">(</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
-        <span class="i">count</span><span class="o">++</span><span class="p">;</span>
-        <span class="i">watchers</span><span class="p">.</span><span class="i">dispatch</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
-      <span class="p">}</span><span class="p">,</span> <span class="n">1000</span><span class="p">)</span><span class="p">;</span>
-    <span class="p">}</span>
-  &lt;/<span class="t">script</span>&gt;<span class="">
-</span>&lt;/<span class="t">body</span>&gt;&lt;/<span class="t">html</span>&gt;</pre></body>
-</html>
+<!DOCTYPE html>
+<!-- This file was auto-generated from web/editor.html. -->
+<html><head><style>template { display: none; }</style>
+    <meta charset="utf-8">
+    <title>Markdown Editor</title>
+    <link rel="stylesheet" href="editor.css">
+  </head>
+  <body>
+    <div id="container">
+      <textarea id="editor"></textarea>
+      <div id="output"></div>
+    </div>
+    
+    <script src="dart.js"></script>
+  
+
+<script type="application/dart" src="editor.html_bootstrap.dart"></script></body></html>
