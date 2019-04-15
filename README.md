@@ -1,12 +1,9 @@
-dartdoc markdown library
+WritePad markdown library
 ========================
 
-This is a standalone version of the [dartdoc][dartdoc] markdown library. It 
+This is a standalone version of the [WritePad][WritePad] markdown library. It 
 parses markdown and converts it to HTML.
 
-You can see a demo running in the browser [here][demo] (tested in Chrome 
-and Dartium). The client library currently only supports HTML syntax 
-highlighting do to some dart:io dependencies in libcss and analyzer_experimental.
 
 Installation
 ------------
@@ -45,5 +42,3 @@ main() {
 ```
 
 [dartdoc]: http://code.google.com/p/dart/source/browse/trunk/dart/sdk/lib/_internal/dartdoc
-[pub]: http://www.dartlang.org/docs/pub-package-manager
-[demo]: http://dpeek.github.com/dart-markdown
