@@ -1,7 +1,7 @@
-WritePad markdown library
+Quill markdown library
 ========================
 
-This is a standalone version of the [WritePad][WritePad] markdown library. It 
+This is a standalone version of the [Quill][Quill] markdown library. It 
 parses markdown and converts it to HTML.
 
 
@@ -41,4 +41,4 @@ main() {
 }
 ```
 
-[dartdoc]: http://code.google.com/p/dart/source/browse/trunk/dart/sdk/lib/_internal/dartdoc
+[Quill]: http://code.google.com/p/dart/source/browse/trunk/dart/sdk/lib/_internal/dartdoc
